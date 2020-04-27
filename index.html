@@ -13,18 +13,24 @@
   <svg width="750" height="500">
     <defs>
       <!-- Left Align icon -->
-      <line x1="3" y1="3" x2="48" y2="3"></line>
-      <line x1="3" y1="19" x2="65" y2="19"></line>
-      <line x1="3" y1="35" x2="48" y2="35"></line>
-      <line x1="3" y1="51" x2="65" y2="51"></line>
+      <g id="leftAlignIcon">
+        <line x1="3" y1="3" x2="48" y2="3"></line>
+        <line x1="3" y1="19" x2="65" y2="19"></line>
+        <line x1="3" y1="35" x2="48" y2="35"></line>
+        <line x1="3" y1="51" x2="65" y2="51"></line>
+      </g>
 
       <!-- Right Caret icon -->
-      <polyline points="3 3, 30 28, 3 53"></polyline>
+      <g id="rightCaretIcon">
+        <polyline points="3 3, 30 28, 3 53"></polyline>
+      </g>
 
       <!-- Browser icon -->
-      <rect x="3" y="3" width="80" height="60"></rect>
-      <line x1="3" y1="19" x2="83" y2="19"></line>
-      <line x1="20" y1="3" x2="20" y2="17"></line>
+      <g id="browserIcon">
+        <rect x="3" y="3" width="80" height="60"></rect>
+        <line x1="3" y1="19" x2="83" y2="19"></line>
+        <line x1="20" y1="3" x2="20" y2="17"></line>
+      </g>
 
       <!-- Alert icon -->
       <ellipse cx="43" cy="43" rx="40" ry="40"></ellipse>
@@ -47,6 +53,10 @@
         Z
       "></path>
     </defs>
+
+    <use href="#leftAlignIcon" x="100" y="100"></use>
+    <use href="#rightCaretIcon" x="300" y="100"></use>
+    <use href="#browserIcon" x="500" y="100"></use>
   </svg>
 </div>
 
