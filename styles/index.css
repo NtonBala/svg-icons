@@ -5,7 +5,7 @@ html, body {
   }
   body {
     margin: 0;
-    text-align: center;
+    /* text-align: center; */
   }
   .grid {
     width: 750px;
@@ -35,6 +35,10 @@ html, body {
     height: 500px;
   }
   svg {
+    position: relative;
+    z-index: 1;
+
+    /* to get these settings into your SVG, use them inline */
     stroke: #000;
     stroke-width: 5;
     stroke-linecap: round;
