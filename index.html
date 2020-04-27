@@ -33,30 +33,40 @@
       </g>
 
       <!-- Alert icon -->
-      <ellipse cx="43" cy="43" rx="40" ry="40"></ellipse>
-      <ellipse cx="43" cy="65" rx="5" ry="5" style="fill: #000;"></ellipse>
-      <line x1="43" y1="19" x2="43" y2="48" style="stroke-width: 8;"></line>
+      <symbol id="alertIcon" viewBox="0 0 86 86">
+        <ellipse cx="43" cy="43" rx="40" ry="40"></ellipse>
+        <ellipse cx="43" cy="65" rx="5" ry="5" style="fill: #000;"></ellipse>
+        <line x1="43" y1="19" x2="43" y2="48" style="stroke-width: 8;"></line>
+      </symbol>
 
       <!-- Play icon -->
-      <ellipse cx="43" cy="43" rx="40" ry="40"></ellipse>
-      <polygon points="35 23, 60 43, 35 63"></polygon>
+      <symbol id="playIcon" viewBox="0 0 86 86">
+        <ellipse cx="43" cy="43" rx="40" ry="40"></ellipse>
+        <polygon points="35 23, 60 43, 35 63"></polygon>
+      </symbol>
 
       <!-- Download icon -->
-      <path d="
-        M 18 3,
-        L 46 3,
-        L 46 40,
-        L 61 40,
-        L 32 68,
-        L 3 40,
-        L 18 40,
-        Z
-      "></path>
+      <symbol id="downloadIcon" viewBox="0 0 64 71">
+        <path d="
+          M 18 3,
+          L 46 3,
+          L 46 40,
+          L 61 40,
+          L 32 68,
+          L 3 40,
+          L 18 40,
+          Z
+        "></path>
+      </symbol>
     </defs>
 
     <use href="#leftAlignIcon" x="100" y="100"></use>
     <use href="#rightCaretIcon" x="300" y="100"></use>
     <use href="#browserIcon" x="500" y="100"></use>
+
+    <use href="#alertIcon" x="100" y="200" width="100" height="100"></use>
+    <use href="#playIcon" x="300" y="200" width="100" height="100"></use>
+    <use href="#downloadIcon" x="500" y="200" width="100" height="100"></use>
   </svg>
 </div>
 
